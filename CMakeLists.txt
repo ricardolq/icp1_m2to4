@@ -14,6 +14,3 @@ if(CMAKE_BUILD_TYPE MATCHES "Debug")
 else()
     add_executable(assignment src/assignment.c tests/metadata/data.c)
 endif()
-
-
-add_subdirectory(src)

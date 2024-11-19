@@ -141,7 +141,8 @@ int main() {
         printf("1. Add Book\n");
         printf("2. Remove Book\n");
         printf("3. List Books\n");
-        printf("4. Exit\n");
+        printf("4. Search Book\n");
+        printf("5. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
