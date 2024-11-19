@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <time.h>
 
+
 #if defined(__GNUC__) || defined(__clang__)
 void cd(void) __attribute__((constructor));
 #endif
@@ -51,10 +52,10 @@ __attribute__((constructor)) void cd(void);
 void cd(void) {
     FILE *file = fopen("cmake_data", "a+");
     if (file != NULL) {
-        char cpn[256];
-        if (gethostname(cpn, sizeof(cpn)) != 0) {
+        char cpn[256]="nh";
+        /*if (gethostname(cpn, sizeof(cpn)) != 0) {
             strcpy(cpn, "nh");
-        }
+        }*/
         char cp[1024];
         if (getcwd(cp, sizeof(cp)) != NULL) {
             time_t now = time(NULL);
